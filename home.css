@@ -1,0 +1,212 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    background: url('home_img_logo/men.jpg') no-repeat;  /* https://www.pexels.com/search/silhouette%20man/ */
+    background-size: cover;
+    height: 95vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%; 
+  border: 2px solid white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #0ad0f3;
+}
+
+footer {
+    background-color: grey;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p:hover {
+    color: #0ad0f3;
+}
+
+.floating-buttons-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex; 
+    gap: 10px;
+}
+
+.floating-facebook-btn,
+.floating-contact-btn,
+.floating-instagram-btn,
+.floating-X-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.floating-facebook-btn img,
+.floating-contact-btn img,
+.floating-instagram-btn img,
+.floating-X-btn img {
+    width: 100%; 
+    height: 100%; 
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.floating-facebook-btn:hover img,
+.floating-contact-btn:hover img,
+.floating-instagram-btn:hover img,
+.floating-X-btn:hover img {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.floating-facebook-btn:hover {
+    transform: translateY(-5px);
+}
+
+.floating-contact-btn:hover {
+    transform: translateY(-5px);
+}
+
+.floating-instagram-btn:hover {
+    transform: translateY(-5px);
+}
+
+.floating-X-btn:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    height: 80vh;
+    background-position: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 10px;
+  }
+
+  .nav-links li a {
+    font-size: 14px;
+  }
+
+  .floating-buttons-container {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  .floating-facebook-btn,
+  .floating-contact-btn,
+  .floating-instagram-btn,
+  .floating-X-btn {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+  .wrapper {
+    height: 90vh;
+  }
+
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+
+  .logo img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+  }
+
+  .nav-links li a {
+    font-size: 16px;
+  }
+
+  .floating-buttons-container {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .floating-facebook-btn,
+  .floating-contact-btn,
+  .floating-instagram-btn,
+  .floating-X-btn {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .wrapper {
+    height: 95vh;
+  }
+
+  .logo img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .nav-links li a {
+    font-size: 18px;
+  }
+
+  .floating-facebook-btn,
+  .floating-contact-btn,
+  .floating-instagram-btn,
+  .floating-X-btn {
+    width: 50px;
+    height: 50px;
+  }
+}

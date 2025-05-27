@@ -1,0 +1,190 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #191919;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h2 {
+  border-bottom: 2px solid #6a9177;
+  padding-bottom: 0.5rem;
+}
+
+.section-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.section-text {
+  flex: 1;
+  min-width: 250px;
+  color: white;
+}
+
+strong, h2{
+  color:#0ad0f3;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  margin-right: 8px;
+  border-radius: 50px;
+}
+
+
+.section-image img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #004466;
+  color: white;
+}
+
+.floating-buttons-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: flex; 
+    gap: 10px;
+}
+
+.floating-expertise-btn,
+.floating-experiences-btn,
+.floating-projects-btn,
+.floating-contact-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.floating-expertise-btn img,
+.floating-experiences-btn img,
+.floating-projects-btn img,
+.floating-contact-btn img {
+    width: 100%; 
+    height: 100%; 
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.floating-expertise-btn:hover img,
+.floating-experiences-btn:hover img,
+.floating-projects-btn:hover img,
+.floating-contact-btn:hover img {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.floating-expertise-btn:hover {
+    transform: translateY(-5px);
+}
+
+.floating-experiences-btn:hover {
+    transform: translateY(-5px);
+}
+
+.floating-projects-btn:hover {
+    transform: translateY(-5px);
+}
+
+.floating-contact-btn:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  .section-flex {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-image img {
+    width: 80%;
+  }
+
+  .floating-buttons-container {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .floating-expertise-btn,
+  .floating-experiences-btn,
+  .floating-projects-btn,
+  .floating-contact-btn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .section-flex {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+
+  .section-image img {
+    width: 250px;
+  }
+
+  .floating-expertise-btn,
+  .floating-experiences-btn,
+  .floating-projects-btn,
+  .floating-contact-btn {
+    width: 45px;
+    height: 45px;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .section-flex {
+    flex-direction: row;
+  }
+
+  .section-image img {
+    width: 300px;
+  }
+
+  .floating-expertise-btn,
+  .floating-experiences-btn,
+  .floating-projects-btn,
+  .floating-contact-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+}
