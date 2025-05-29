@@ -25,6 +25,9 @@ h2 {
   margin-bottom: 4rem;
   flex-wrap: wrap;
 }
+.text{
+  color: rgb(28, 158, 190);
+}
 
 .section-text {
   flex: 1;
